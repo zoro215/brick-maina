@@ -1,0 +1,29 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #333;
+}
+
+canvas {
+    background-color: #000;
+    display: block;
+    width: 100%;
+    max-width: 480px;  /* Компьютерда катта экранлар учун максимал кенглик */
+    height: auto;  /* Баландлик автоматик равишда тенглашади */
+}
+
+/* Қўшимча адаптация телефон ва планшетлар учун */
+@media (max-width: 768px) {
+    canvas {
+        width: 100%;  /* Телефон ва планшетлар учун тўлиқ экран кенглиги */
+    }
+}
+        
